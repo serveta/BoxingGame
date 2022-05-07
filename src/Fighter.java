@@ -8,15 +8,13 @@ public class Fighter {
     int weight;
     int damage;
     int dodge;
-    int playerCount = 0;
 
     Fighter() {
-
+        this.health = 100;
     }
 
     Fighter(String name, int weight, int damage, int dodge) {
         this.name = name;
-        this.health = 100;
         this.weight = weight;
         this.damage = damage;
         this.dodge = dodge;
@@ -29,7 +27,7 @@ public class Fighter {
             System.out.println("\n*** Create a player ***");
             System.out.print("Player-" + playerCount + " name : ");
             name = input.next();
-            System.out.print("Player-" + playerCount + " weight : ");
+            System.out.print("Player-" + playerCount + " weight (85-110) : ");
             weight = input.nextInt();
             System.out.print("Player-" + playerCount + " damage (1-10) : ");
             damage = input.nextInt();
@@ -48,7 +46,6 @@ public class Fighter {
         }
     }
 
-
     void showFighterInfo() {
         System.out.println();
         System.out.println("*** FIGHTER INFO " + this.name + " ***");
@@ -57,4 +54,13 @@ public class Fighter {
         System.out.println("Fighter Damage\t: " + this.damage);
         System.out.println("Fighter Dodge\t: " + this.dodge);
     }
+
+    void damage(Fighter fighter) {
+        this.health -= fighter.damage;
+    }
+
+    boolean isDodge() {
+        return (Math.random() * 100) < this.dodge;
+    }
+
 }
