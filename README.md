@@ -25,3 +25,6 @@ git clone https://github.com/serveta/BoxingGame.git
     ````
     src > App.java
     ````
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
