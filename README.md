@@ -20,9 +20,9 @@ This project is the development of the project assignment given in the Java 101 
 ## Installation / Usage
 If you want to clone this game.
 1. Clone this repo.
-````
-git clone https://github.com/serveta/BoxingGame.git
-````
+    ````
+    git clone https://github.com/serveta/BoxingGame.git
+    ````
 2. After cloning the project, you can open the project in an IDE like Eclipse or IntelliJIDEA of your choice.
 3. Inside the project open this path and Run the project;
     ````
@@ -30,4 +30,4 @@ git clone https://github.com/serveta/BoxingGame.git
     ````
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)  

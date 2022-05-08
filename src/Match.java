@@ -54,7 +54,6 @@ public class Match {
 
 
             if (!whichPlayerStarts) {
-                this.player2.damage(this.player1);
                 if (player2.isDodge()){
                     player2Dodge = true;
                 } else {
